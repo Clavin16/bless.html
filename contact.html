@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Contact — Calvin Gaisie</title>
+  <meta name="description" content="Contact Calvin Gaisie — email, phone, WhatsApp. Hire for web development and UI work." />
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="container header-inner">
+      <div class="logo"><span class=""></span>CALVIN GAISIE</div>
+      <nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="services.html">Services</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <a class="cta" href="contact.html">Contact</a>
+      <input id="menu-toggle" class="menu-toggle" type="checkbox" />
+      <label for="menu-toggle" class="menu-btn" aria-hidden="true"><span class="menu-icon"></span></label>
+    </div>
+
+    
+  </header>
+
+  <main class="container" style="padding:48px 0 80px">
+    <div class="section-title">Contact</div>
+    <p class="section-desc muted" style="margin-top:8px">Want to work together? Send a message or use the contact details below.</p>
+
+    <div style="display:grid;grid-template-columns:1fr 360px;gap:20px;margin-top:18px">
+      <!-- Simple contact form (action=#, replace with backend or form service) -->
+      <form class="form" action="https://formspree.io/f/mwprlarj" method="POST" style="display:flex;flex-direction:column">
+        <input class="input" type="text" name="name" placeholder="Your name" required>
+        <input class="input" type="email" name="email" placeholder="Email address" required>
+        <input class="input" type="text" name="subject" placeholder="Subject">
+        <textarea class="textarea" name="message" placeholder="How can I help?" required></textarea>
+        <button class="submit" type="submit">Send message</button>
+      </form>
+
+      <aside>
+        <div class="card">
+          <h4>Contact details</h4>
+          <p class="muted" style="margin-top:8px">
+            <strong>Email:</strong> <a href="mailto:klvnkave@gmail.com" style="color:var(--muted);text-decoration:underline">klvnkave@gmail.com</a><br>
+            <strong>Call:</strong> <a href="tel:+233549920955" style="color:var(--muted);text-decoration:underline">+233 549 920 955</a><br>
+            <strong>WhatsApp:</strong> <a href="https://wa.me/233598444229" style="color:var(--muted);text-decoration:underline" target="_blank" rel="noopener">+233 598 444 229</a>
+          </p>
+        </div>
+
+        <div class="card" style="margin-top:12px">
+          <h4>Availability</h4>
+          <p class="muted" style="margin-top:8px">Typically replies within 1–2 business days. For urgent requests use the phone or WhatsApp number.</p>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <footer class="footer"><div class="container">© 2025 Calvin Gaisie • klvnkave@gmail.com</div></footer>
+  <style>
+    /* ========== style.css ========== */
+/* Sleek professional theme for Calvin Gaisie — responsive, CSS-only nav */
+
+/* Variables */
+:root{
+  --bg: #0b0e13;
+  --panel: #0f161b;
+  --muted: #9aa6b2;
+  --text: #e6eef3;
+  --accent: #2fa4ff;
+  --accent-2: #6dd3ff;
+  --glass: rgba(255,255,255,0.03);
+  --radius: 12px;
+  --maxw: 1200px;
+  --shadow: 0 10px 30px rgba(2,8,15,0.6);
+}
+
+/* Reset */
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{height:100%}
+body{
+  font-family: Inter, "Segoe UI", Roboto, system-ui, -apple-system, "Helvetica Neue", Arial;
+  background: linear-gradient(180deg, var(--bg) 0%, #071018 100%);
+  color:var(--text);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  line-height:1.5;
+  font-size:16px;
+}
+.container{width:92%;max-width:var(--maxw);margin:0 auto}
+
+/* Smooth scroll */
+html{scroll-behavior:smooth}
+
+/* Header / Nav */
+.header{
+  position:sticky;top:0;z-index:999;
+  background: linear-gradient(180deg, rgba(6,9,12,0.6), rgba(6,9,12,0.45));
+  border-bottom:1px solid rgba(255,255,255,0.03);
+  backdrop-filter: blur(6px);
+}
+.header-inner{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:14px 0}
+.logo{display:flex;align-items:center;gap:10px;font-weight:700;font-size:1.05rem}
+.logo .mark{width:42px;height:42px;border-radius:10px;background:linear-gradient(135deg,var(--accent),var(--accent-2));box-shadow:0 6px 26px rgba(45,170,255,0.12)}
+.nav{display:flex;gap:18px;align-items:center}
+.nav a{color:var(--muted);font-weight:600;padding:8px 10px;border-radius:8px;transition:color .18s,transform .18s}
+.nav a:hover{color:var(--text);transform:translateY(-2px)}
+.cta{padding:9px 16px;background:linear-gradient(90deg,var(--accent-2),var(--accent));color:#042233;border-radius:999px;font-weight:800;text-decoration:none;box-shadow:0 8px 28px rgba(45,170,255,0.12)}
+
+/* Mobile menu (checkbox hack) */
+.menu-toggle{display:none}
+.menu-btn{display:none;width:44px;height:44px;border-radius:10px;background:var(--glass);border:1px solid rgba(255,255,255,0.02);align-items:center;justify-content:center;cursor:pointer}
+.menu-icon{width:20px;height:2px;background:var(--text);position:relative;display:block}
+.menu-icon::before,.menu-icon::after{content:"";position:absolute;left:0;width:20px;height:2px;background:var(--text)}
+.menu-icon::before{top:-6px}
+.menu-icon::after{top:6px}
+
+/* Hero */
+.hero{padding:80px 0 64px}
+.hero-grid{display:grid;grid-template-columns:1fr 420px;gap:30px;align-items:center}
+@media (max-width:980px){.hero-grid{grid-template-columns:1fr}}
+.panel{
+  background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
+  border-radius:var(--radius);padding:32px;border:1px solid rgba(255,255,255,0.03);box-shadow:var(--shadow)
+}
+.kicker{display:inline-block;padding:6px 10px;border-radius:999px;background:rgba(47,164,255,0.12);color:var(--accent-2);font-weight:700;margin-bottom:12px;font-size:.86rem}
+.hero h1{font-size:2.4rem;line-height:1.02;margin-bottom:12px;color:var(--text)}
+.hero p{color:var(--muted);margin-bottom:18px;font-size:1rem}
+
+/* Buttons */
+.btn-row{margin-top:18px;display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:11px 18px;border-radius:999px;background:transparent;border:1px solid rgba(255,255,255,0.04);color:var(--text);font-weight:700;text-decoration:none}
+.btn.primary{background:linear-gradient(90deg,var(--accent),var(--accent-2));color:#052;box-shadow:0 12px 30px rgba(45,170,255,0.12);border:none}
+
+/* Preview / card on right */
+.preview .mock{height:240px;border-radius:10px;background:linear-gradient(135deg,#ddefff,#bfe9ff);display:flex;align-items:center;justify-content:center;color:#042233;font-weight:800}
+.preview .price{font-size:1.5rem;font-weight:800;margin-top:12px;color:var(--text)}
+.preview .meta{color:var(--muted);margin-bottom:12px}
+
+/* Sections */
+.section{padding:56px 0}
+.section-head{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:18px}
+.section-title{font-size:1.25rem;color:var(--text);font-weight:700}
+.section-desc{color:var(--muted);font-size:.98rem}
+
+/* Grid cards */
+.grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.card{background:linear-gradient(180deg, rgba(255,255,255,0.015), rgba(255,255,255,0.01));padding:20px;border-radius:12px;border:1px solid rgba(255,255,255,0.03);box-shadow:0 8px 28px rgba(2,6,12,0.6)}
+.card h3{color:var(--text);margin-bottom:8px}
+.card p{color:var(--muted);font-size:.95rem}
+
+/* Product/project tiles with subtle color */
+.tile{padding:28px;border-radius:12px;color:#042233;font-weight:800;background:linear-gradient(135deg,#dbefff,#bfe9ff);display:flex;align-items:center;justify-content:center;min-height:140px}
+
+/* Testimonials / small text */
+.muted{color:var(--muted)}
+
+/* Contact form */
+.form{padding:18px;border-radius:12px;border:1px solid rgba(255,255,255,0.03);background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.005))}
+.input, .textarea{width:100%;padding:12px;border-radius:10px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:var(--text);margin-bottom:12px}
+textarea.textarea{min-height:140px;resize:vertical}
+.form .submit{display:inline-block;padding:12px 18px;border-radius:999px;background:linear-gradient(90deg,var(--accent),var(--accent-2));border:none;color:#042233;font-weight:800;cursor:pointer}
+
+/* Footer */
+.footer{padding:28px 0;color:var(--muted);border-top:1px solid rgba(255,255,255,0.02);margin-top:40px;text-align:center}
+
+/* Mobile specific */
+@media (max-width:880px){
+  .nav{display:none}
+  .menu-btn{display:flex}
+  .mobile-nav{display:block;padding:12px 0;max-height:0;overflow:hidden;transition:all .28s ease;opacity:0}
+  .menu-toggle:checked ~ .mobile-nav{max-height:400px;opacity:1}
+  .mobile-nav a{display:block;padding:10px;border-radius:8px;color:var(--muted);text-decoration:none}
+  .hero-grid{grid-template-columns:1fr}
+  .header-inner{align-items:center}
+}
+
+/* small screens */
+@media (max-width:520px){
+  .hero h1{font-size:1.6rem}
+  .logo{font-size:.98rem}
+}
+
+  </style>
+</body>
+</html>
